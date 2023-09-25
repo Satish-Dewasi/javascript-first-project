@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <div class="botton" id="grey"></div>
+    <div class="botton" id="white"></div>
+    <div class="botton" id="blue"></div>
+    <div class="botton" id="yellow"></div>
+    <div class="botton" id="red"></div>
+    <div class="botton" id="green"></div>
+
+ <script>
+
+  const buttons = document.querySelectorAll('.botton');
+  const body = document.querySelector("body");
+ 
+  
+
+ 
+  buttons.forEach(function(button){
+    // console.log(button);
+
+    button.addEventListener('mouseover', function(e){
+        console.log(e.target.id);
+
+        body.style.backgroundColor=e.target.id;
+    })
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+//   buttons.forEach(function(button){
+
+//     console.log(button);
+
+//   button.addEventListener('click', function(e){
+//     console.log(e);
+//     if(e.target.id ==='grey'){
+   
+//     body.style.backgroundColor= e.target.id;
+//     }
+
+
+//   })
+  
+//   });
+
+  
+    
+
+ </script>
+</body>
+</html>
